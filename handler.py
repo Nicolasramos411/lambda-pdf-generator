@@ -45,7 +45,7 @@ def hello(event, context):
     pdf.save()
     pdf_buffer.seek(0)
 
-    # Guardar pdf en S3 con permisos públicos
+    # Guardar pdf en S3 con permisos públicoss
 
     s3 = client('s3')
     bucket_name = 'aws-python-pdf-generator-serverlessdeploymentbuck-1t99xs5ra2yn9'
