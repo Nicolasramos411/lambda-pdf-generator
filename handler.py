@@ -10,8 +10,8 @@ def hello(event, context):
 
     # Datos de ejemplo
     datos_usuario = {
-        "nombre": "Juan Pérez",
-        "direccion": "Calle Principal 123",
+        "nombre": event["queryStringParameters"]['nombre'],
+        "direccion": event["queryStringParameters"]['direccion']
         # ... Agrega más datos según tus necesidades
     }
 
